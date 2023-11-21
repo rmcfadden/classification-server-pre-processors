@@ -2,7 +2,12 @@
     "name": "classification-server-pre-processors",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "files": [
+        "/dist"
+    ],
+    "exports": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "scripts": {
         "build": "npx tsc",
         "test": "jest --coverage",
