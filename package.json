@@ -10,7 +10,7 @@
     "types": "./dist/index.d.ts",
     "scripts": {
         "build": "npx tsc",
-        "test": "jest --coverage",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
         "postinstall": "npx tsc",
         "start": "node dist/index.js",
         "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
@@ -25,6 +25,7 @@
         "typescript": "^5.2.2"
     },
     "dependencies": {
-        "classification-server": "https://github.com/rmcfadden/classification-server"
+        "classification-server": "https://github.com/rmcfadden/classification-server",
+        "natural": "^6.8.1"
     }
 }
